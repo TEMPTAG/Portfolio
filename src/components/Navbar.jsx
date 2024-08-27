@@ -1,4 +1,4 @@
-import Navbar from './UI/Navbar';
+import Navbar from './UI/Header';
 
 export default function Header() {
   const links = [

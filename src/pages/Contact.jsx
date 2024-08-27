@@ -8,10 +8,10 @@
 
 export default function Contact() {
     return (
-      <div>
+      <main className="flex-grow-1">
         <h1>Contact Page</h1>
         <p>Coming soon...</p> 
-      </div>
+      </main>
     );
   }
   

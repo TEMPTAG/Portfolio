@@ -3,9 +3,9 @@
 
 export default function Portfolio() {
   return (
-    <div>
+    <main className="flex-grow-1">
       <h1>Portfolio</h1>
         <p>Coming soon...</p>
-    </div>
+    </main>
   );
 }

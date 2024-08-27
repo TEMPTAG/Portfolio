@@ -3,10 +3,10 @@
 
 export default function Resume() {
     return (
-      <div>
+      <main className="flex-grow-1">
         <h1>Resume Page</h1>
         <p>Coming soon...</p>
-      </div>
+      </main>
     );
   }
   

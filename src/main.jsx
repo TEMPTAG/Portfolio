@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './index.css';
 
 import App from './App';
@@ -17,7 +17,6 @@ const router = createBrowserRouter([
   errorElement: <ErrorPage />,
   children: [
     {
-    
       index: true,
       element: <AboutMe />,
     },
