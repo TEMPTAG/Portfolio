@@ -8,11 +8,13 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
+    <div className="wrapper d-flex flex-column min-vh-100">
       <Nav />
-      <Outlet />
+      <div className="flex-grow-1">
+        <Outlet />
+      </div>
       <Footer />
-    </>
+    </div>
   );
 }
 
