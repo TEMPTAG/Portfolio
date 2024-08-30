@@ -1,3 +1,5 @@
+// TODO: Pull the styling out of the HTML body
+
 export default function PortfolioCards({ title, description, image, githubLink, deployedLink }) {
     return (
       <div className="card m-3" style={{ width: '18rem' }}>
