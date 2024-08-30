@@ -1,12 +1,2 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import "bootstrap-icons/font/bootstrap-icons.css";
-
-:root {
-  font-family: "Neue Montreal", sans-serif;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}

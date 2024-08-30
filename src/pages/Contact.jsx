@@ -7,11 +7,13 @@
 
 
 export default function Contact() {
-    return (
-      <main className="flex-grow-1">
+  return (
+    <main className="flex-grow-1 d-flex justify-content-center align-items-center vh-100">
+      <div className="text-center">
         <h1>Contact Page</h1>
         <p>Coming soon...</p> 
-      </main>
-    );
-  }
+      </div>
+    </main>
+  );
+}
   

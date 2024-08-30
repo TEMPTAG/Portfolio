@@ -3,10 +3,12 @@
 
 export default function Resume() {
     return (
-      <main className="flex-grow-1">
+      <main className="flex-grow-1 d-flex justify-content-center align-items-center vh-100">
+      <div className="text-center">
         <h1>Resume Page</h1>
-        <p>Coming soon...</p>
-      </main>
+        <p>Coming soon...</p> 
+      </div>
+    </main>
     );
   }
   
