@@ -1,8 +1,15 @@
 // WHEN I am presented with the Portfolio section
 // THEN I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repositories
 
+import Hero from '../components/UI/Hero';
 import PortfolioCards from '../components/UI/PortfolioCards';
 import yesChef from '../assets/images/yesChef.jpg';
+
+const hero = {
+  title: "portfolio.",
+  description: "Welcome to my creative space. Here, I bring together technology and innovation to craft web solutions that solve real-world problems.  View the projects below, or visit my GitHub profile to see more of my work.",
+  buttonText: "My GitHub Profile"
+};
 
 const applications = [
   {
@@ -16,9 +23,9 @@ const applications = [
 
 export default function Portfolio() {
   return (
-    <main className="container">
-      <div className="text-center mb-4">
-        <h1>Portfolio Projects</h1>
+    <div className="container">
+      <div>
+        <Hero title={hero.title} description={hero.description} buttonText={hero.buttonText} />
       </div>
       <div className="d-flex flex-wrap justify-content-around">
         {applications.map((applications, index) => (
@@ -32,6 +39,6 @@ export default function Portfolio() {
           />
         ))}
       </div>
-    </main>
+    </div>
   );
 }

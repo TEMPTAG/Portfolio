@@ -5,7 +5,7 @@
 export default function Footer() {
     return (
         <footer className="footer py-3">
-            <div className="container text-center">
+            <div className="container-fluid text-center">
                 <div className="d-inline-flex">
                     <a href="https://github.com/TEMPTAG" target="_blank" rel="noopener noreferrer" className="text-dark mx-3">
                         <i className="bi bi-github" style={{ fontSize: '2rem' }}></i>

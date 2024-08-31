@@ -1,7 +1,16 @@
 // WHEN I am presented with the Resume section
 // THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
 
+// TODO:  Make proficiency cards with icons
+
+import Hero from '../components/UI/Hero';
 import resumePDF from '../assets/documents/Resume.pdf'; // Assuming your resume PDF is in the assets folder
+
+const hero = {
+  title: "resume.",
+  description: "I am a full-stack web developer with a passion for creating innovative solutions to real-world problems.  My skills include...",
+  buttonText: "Download My Resume"
+};
 
 export default function Resume() {
   const codingProficiencies = [
@@ -29,9 +38,11 @@ export default function Resume() {
   ];
 
   return (
-    <main className="container">
+    <div className="container">
+      <div>
+        <Hero title={hero.title} description={hero.description} buttonText={hero.buttonText} />
+      </div>
       <div className="text-center mb-4">
-        <h1>Resume</h1>
         <a href={resumePDF} download="Ian_Ferguson_Resume.pdf" className="btn btn-dark mb-4">
           Download My Resume
         </a>
@@ -59,6 +70,6 @@ export default function Resume() {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

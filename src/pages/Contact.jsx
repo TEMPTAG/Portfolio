@@ -5,13 +5,20 @@
 // WHEN I enter text into the email address field
 // THEN I receive a notification if I have entered an invalid email address
 
+import Hero from '../components/UI/Hero';
+
+const hero = {
+  title: "contact.",
+  description: "I am always excited to hear from you.  Please fill out the form below to get in touch with me.",
+  buttonText: "Submit"
+};
 
 export default function Contact() {
   return (
-    <main className="container">
+    <div className="container">
       <div className="row">
-        <div className="col">
-          <h1>Contact Page</h1>
+        <div>
+          <Hero title={hero.title} description={hero.description} buttonText={hero.buttonText} />
         </div>
         <form className="col">
           <div className="mb-3">
@@ -34,7 +41,7 @@ export default function Contact() {
           <button type="submit" className="btn btn-dark">Submit</button>
         </form>
       </div>
-    </main>
+    </div>
   );
 }
   

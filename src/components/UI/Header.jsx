@@ -35,7 +35,7 @@ export default function Navbar({ links }) {
                 <NavLink
                 to={link.to}
                 className={({ isActive }) =>
-                  `nav-link text-dark ${isActive ? 'active' : ''}`
+                  `nav-link ${isActive ? 'active' : ''}`
               }
               >
                 {link.title}
