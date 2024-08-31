@@ -13,7 +13,7 @@ import signature from '../../assets/images/blackSignature.svg';
 
 export default function Navbar({ links }) {
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className="navbar navbar-expand-lg mb-4">
       <div className="container-fluid">
       <img className="navbar-brand" src={signature} alt="Ian Ferguson Signature" style={{ maxHeight: '145px' }}/>
         {/* <h1 className="navbar-brand text-dark">IAN FERGUSON</h1> */}

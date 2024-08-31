@@ -4,39 +4,37 @@
 // TODO:  Make proficiency cards with icons
 
 import Hero from '../components/UI/Hero';
-import resumePDF from '../assets/documents/Resume.pdf'; // Assuming your resume PDF is in the assets folder
+import resumePDF from '../assets/documents/Resume.pdf';
+import Icon from '../components/UI/IconCards';
 
 const hero = {
   title: "resume.",
-  description: "I am a full-stack web developer with a passion for creating innovative solutions to real-world problems.  My skills include...",
+  description: "Combining years of business leadership with technical proficiency, this page offers a comprehensive look at the skills and experience that define my career...",
   buttonText: "Download My Resume"
 };
 
-export default function Resume() {
-  const codingProficiencies = [
-    "Object-Oriented Programming (OOP)",
-    "SQL",
-    "TypeScript",
-    "Node.js",
-    "REST APIs",
-    "Git",
-    "JSON",
-    "Fetch",
-    "AJAX",
-    "Server Side JavaScript",
-    "Server Side Programming",
-    "Server Side",
-    "Web Services API",
-    "Tailwind CSS",
-    "Bootstrap (Framework)",
-    "Developer Tools",
-    "CLI",
-    "JavaScript",
-    "Cascading Style Sheets (CSS)",
-    "HTML5",
-    "Pseudocode"
-  ];
+const proficiencies = [
+  { icon: "bi bi-git", title: "git" },
+  { icon: "bi bi-code-slash", title: "OOP" },
+  { icon: "bi bi-database", title: "SQL" },
+  { icon: "bi bi-filetype-js", title: "JavaScript" },
+  { icon: "bi bi-filetype-json", title: "JSON" },
+  { icon: "bi bi-bootstrap", title: "Bootstrap" },
+  { icon: "bi bi-node", title: "Node.js" },
+  { icon: "bi bi-type", title: "TypeScript" },
+  { icon: "bi bi-layers", title: "REST APIs" },
+  { icon: "bi bi-server", title: "SSP" },
+  { icon: "bi bi-file-code", title: "HTML5" },
+  { icon: "bi bi-filetype-css", title: "CSS" },
+  { icon: "bi bi-arrows-move", title: "Fetch" },
+  { icon: "bi bi-arrow-repeat", title: "AJAX" },
+  { icon: "bi bi-terminal", title: "CLI" },
+  { icon: "bi bi-filetype-jsx", title: "React" },
+  { icon: "bi bi-cloud-arrow-up", title: "APIs" },
+  { icon: "bi bi-code-slash", title: "Tailwind" }
+];
 
+export default function Resume() {
   return (
     <div className="container">
       <div>
@@ -48,26 +46,11 @@ export default function Resume() {
         </a>
       </div>
       <div>
-        <h2>Coding Proficiencies</h2>
-        <div className="row">
-          <div className="col-md-6">
-            <ul className="list-group">
-              {codingProficiencies.slice(0, Math.ceil(codingProficiencies.length / 2)).map((skill, index) => (
-                <li key={index} className="list-group-item">
-                  {skill}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="col-md-6">
-            <ul className="list-group">
-              {codingProficiencies.slice(Math.ceil(codingProficiencies.length / 2)).map((skill, index) => (
-                <li key={index} className="list-group-item">
-                  {skill}
-                </li>
-              ))}
-            </ul>
-          </div>
+        <h2>codingProficiencies.</h2>
+        <div className="row justify-content-center">
+          {proficiencies.map((proficiency, index) => (
+            <Icon key={index} icon={proficiency.icon} title={proficiency.title} />
+          ))}
         </div>
       </div>
     </div>

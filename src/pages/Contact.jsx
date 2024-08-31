@@ -9,7 +9,7 @@ import Hero from '../components/UI/Hero';
 
 const hero = {
   title: "contact.",
-  description: "I am always excited to hear from you.  Please fill out the form below to get in touch with me.",
+  description: "Contact me today to discuss how we can work together. Whether it’s for business or tech, I’m happy to help...",
   buttonText: "Submit"
 };
 
