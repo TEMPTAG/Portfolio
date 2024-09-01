@@ -16,7 +16,7 @@ export default function Navbar({ links }) {
     <nav className="navbar navbar-expand-lg mb-4">
       <div className="container-fluid">
       <img className="navbar-brand" src={signature} alt="Ian Ferguson Signature" style={{ maxHeight: '145px' }}/>
-        {/* <h1 className="navbar-brand text-dark">IAN FERGUSON</h1> */}
+        {/* <h1 className="navbar-brand text-dark fw-bold">I A N | F E R G U S O N</h1> */}
         <button
         className="navbar-toggler"
         type="button"

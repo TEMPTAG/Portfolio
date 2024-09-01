@@ -10,16 +10,17 @@ import Hero from '../components/UI/Hero';
 const hero = {
   title: "contact.",
   description: "Contact me today to discuss how we can work together. Whether it’s for business or tech, I’m happy to help...",
-  buttonText: "Submit"
+  buttonText: "Submit",
+  buttonLink: "#"
 };
 
 export default function Contact() {
   return (
     <div className="container">
       <div className="row">
-        <div>
-          <Hero title={hero.title} description={hero.description} buttonText={hero.buttonText} />
-        </div>
+      <div>
+        <Hero title={hero.title} description={hero.description} buttonText={hero.buttonText} buttonLink={hero.buttonLink}/>
+      </div>
         <form className="col">
           <div className="mb-3">
             <label htmlFor="name" className="form-label">Name:</label>
@@ -28,7 +29,6 @@ export default function Contact() {
           <div className="mb-3">
             <label htmlFor="email" className="form-label">Email address:</label>
             <input type="email" className="form-control" id="email" aria-describedby="emailHelp" />
-            <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
           </div>
           <div className="mb-3">
             <label htmlFor="message" className="form-label">Message:</label>

@@ -10,7 +10,8 @@ import Icon from '../components/UI/IconCards';
 const hero = {
   title: "resume.",
   description: "Combining years of business leadership with technical proficiency, this page offers a comprehensive look at the skills and experience that define my career...",
-  buttonText: "Download My Resume"
+  buttonText: "Download My Resume",
+  buttonLink: resumePDF
 };
 
 const proficiencies = [
@@ -38,12 +39,7 @@ export default function Resume() {
   return (
     <div className="container">
       <div>
-        <Hero title={hero.title} description={hero.description} buttonText={hero.buttonText} />
-      </div>
-      <div className="text-center mb-4">
-        <a href={resumePDF} download="Ian_Ferguson_Resume.pdf" className="btn btn-dark mb-4">
-          Download My Resume
-        </a>
+        <Hero title={hero.title} description={hero.description} buttonText={hero.buttonText} buttonLink={hero.buttonLink}/>
       </div>
       <div>
         <h2>codingProficiencies.</h2>
